@@ -1,0 +1,25 @@
+{
+  "name": "clever-test-logs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./start-app.js",
+    "start:dev": "nodemon ./start-app.js"
+  },
+  "dependencies": {
+    "@hapi/good": "8.2.0",
+    "@hapi/good-console": "8.1.0",
+    "@hapi/good-squeeze": "5.2.0",
+    "@hapi/hapi": "18.3.1",
+    "@hapi/inert": "^5.2.1",
+    "baconjs": "^3.0.10",
+    "convict": "5.1.0",
+    "hapi-require-https": "^3.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  },
+  "engines": {
+    "node": "^12"
+  }
+}
