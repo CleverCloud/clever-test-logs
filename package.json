@@ -13,13 +13,18 @@
     "@hapi/hapi": "18.3.1",
     "@hapi/inert": "^5.2.1",
     "baconjs": "^3.0.10",
+    "chalk": "4.1.2",
     "convict": "5.1.0",
-    "hapi-require-https": "^3.0.1"
+    "hapi-require-https": "^3.0.1",
+    "strip-ansi": "^7.1.0"
   },
   "devDependencies": {
     "nodemon": "^1.19.1"
   },
   "engines": {
     "node": "^12"
+  },
+  "volta": {
+    "node": "18.18.0"
   }
 }

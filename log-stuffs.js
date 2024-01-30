@@ -1,5 +1,6 @@
 'use strict';
 
+const chalk = require('chalk');
 const { CC_DEPLOYMENT_ID, INSTANCE_ID, INSTANCE_NUMBER } = process.env;
 const prefix = `${CC_DEPLOYMENT_ID} ${INSTANCE_ID} ${INSTANCE_NUMBER}`;
 
@@ -12,6 +13,10 @@ module.exports = {
       server.log(['test'], `${prefix} SOME TEXT: FOOBAR`);
       server.log(['test'], `${prefix} SOME TEXT: foobar`);
       server.log(['test'], `${prefix} SOME TEXT: foOBAr`);
+
+      server.log(['test'], `${prefix} SOME COLORS: ${chalk.blue('yeah blue')} ${chalk.red('yeah red')} ${chalk.green('yeah green')} }`);
+
+      server.log(['test'], `${prefix} SOME EMOJIS: 🚀🦄🌈🫃🏿`);
 
       server.log(['test'], `${prefix} RANDOM (${Math.random().toString(36).slice(2)})`);
 
