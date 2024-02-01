@@ -20,6 +20,10 @@ module.exports = {
 
       server.log(['test'], `${prefix} RANDOM (${Math.random().toString(36).slice(2)})`);
 
+      console.error(['test'], `${prefix} Error log`)
+      console.error(new Error('Error stack'))
+
+
       Array
         .from(new Array(10))
         .forEach((_, i) => {
